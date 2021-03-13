@@ -19,7 +19,6 @@ variables:
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
-<<<<<<< HEAD
   displayName: 'dotnet build $(buildConfiguration)'  
 
 
@@ -30,8 +29,4 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration)'
     publishTestResults: true
     projects: '**/*.Tests.csproj'  
-=======
-  displayName: 'dotnet build $(buildConfiguration)'          
-
->>>>>>> 0edede6dc0df88b19f22dc1e7b132a239388dc8e
 
