@@ -21,9 +21,14 @@ steps:
   displayName: 'Run unit tests - $(buildConfiguration)'
   inputs:
     version: '5.0.x'
+    performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
     command: 'test'
     arguments: '--no-build --configuration $(buildConfiguration)'
     publishTestResults: true
     projects: '**/*.Tests.csproj'
+
+
+
  
 
