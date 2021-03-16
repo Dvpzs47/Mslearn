@@ -26,13 +26,6 @@ steps:
     includePreviewVersions: true # Required for preview versions  
 
 
-- task: DotNetCoreCLI@2
-  displayName: 'Run unit tests - $(buildConfiguration)'
-  inputs:
-    version: '5.0.x'
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration)'
-    publishTestResults: true
-    projects: '**/*.Tests.csproj'
+
  
 
