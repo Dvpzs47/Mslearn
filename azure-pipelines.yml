@@ -17,19 +17,6 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'  
 
 
-#- task: DotNetCoreCLI@2
-#  displayName: 'Run unit tests - $(buildConfiguration)'
-#  inputs:
-#   version: '5.0.x'
-#  performMultiLevelLookup: true
-# includePreviewVersions: true # Required for preview versions
-#    command: 'test'
-#    arguments: '--no-build --configuration $(buildConfiguration)'
-#    publishTestResults: true
-#    projects: '**/*.Tests.csproj'
-
-
-# Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
 - task: DotNetCoreCLI@2
   displayName: dotnet test
   inputs:
